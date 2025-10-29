@@ -58,6 +58,8 @@ app.Use(async (context, next) =>
         };
 
         problemDetails.Extensions["TRACEID"] = traceId;
+        
+        problemDetails.Extensions["Rilascio"] = "rilascio riuscito";
 
         context.Response.ContentType = "application/json";
         await context.Response.WriteAsJsonAsync(problemDetails);
