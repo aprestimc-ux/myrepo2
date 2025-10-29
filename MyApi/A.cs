@@ -4,5 +4,6 @@
     {
         public int Id { get; init; }
         public int Id2 { get; init; }
+        public int Id3 { get; init; }
     }
 }
